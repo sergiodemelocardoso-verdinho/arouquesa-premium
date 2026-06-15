@@ -9,8 +9,86 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SalaPrivadaRouteImport } from './routes/sala-privada'
+import { Route as ReservasRouteImport } from './routes/reservas'
+import { Route as RacaRouteImport } from './routes/raca'
+import { Route as PrivacidadeRouteImport } from './routes/privacidade'
+import { Route as ImprensaRouteImport } from './routes/imprensa'
+import { Route as GarrafeiraRouteImport } from './routes/garrafeira'
+import { Route as GaleriaRouteImport } from './routes/galeria'
+import { Route as EventosRouteImport } from './routes/eventos'
+import { Route as EmentaRouteImport } from './routes/ementa'
+import { Route as ContactosRouteImport } from './routes/contactos'
+import { Route as CasaRouteImport } from './routes/casa'
+import { Route as AcessibilidadeRouteImport } from './routes/acessibilidade'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SalaPrivadaRoute = SalaPrivadaRouteImport.update({
+  id: '/sala-privada',
+  path: '/sala-privada',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReservasRoute = ReservasRouteImport.update({
+  id: '/reservas',
+  path: '/reservas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RacaRoute = RacaRouteImport.update({
+  id: '/raca',
+  path: '/raca',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacidadeRoute = PrivacidadeRouteImport.update({
+  id: '/privacidade',
+  path: '/privacidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImprensaRoute = ImprensaRouteImport.update({
+  id: '/imprensa',
+  path: '/imprensa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GarrafeiraRoute = GarrafeiraRouteImport.update({
+  id: '/garrafeira',
+  path: '/garrafeira',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GaleriaRoute = GaleriaRouteImport.update({
+  id: '/galeria',
+  path: '/galeria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventosRoute = EventosRouteImport.update({
+  id: '/eventos',
+  path: '/eventos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmentaRoute = EmentaRouteImport.update({
+  id: '/ementa',
+  path: '/ementa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactosRoute = ContactosRouteImport.update({
+  id: '/contactos',
+  path: '/contactos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CasaRoute = CasaRouteImport.update({
+  id: '/casa',
+  path: '/casa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AcessibilidadeRoute = AcessibilidadeRouteImport.update({
+  id: '/acessibilidade',
+  path: '/acessibilidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +97,214 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/acessibilidade': typeof AcessibilidadeRoute
+  '/casa': typeof CasaRoute
+  '/contactos': typeof ContactosRoute
+  '/ementa': typeof EmentaRoute
+  '/eventos': typeof EventosRoute
+  '/galeria': typeof GaleriaRoute
+  '/garrafeira': typeof GarrafeiraRoute
+  '/imprensa': typeof ImprensaRoute
+  '/privacidade': typeof PrivacidadeRoute
+  '/raca': typeof RacaRoute
+  '/reservas': typeof ReservasRoute
+  '/sala-privada': typeof SalaPrivadaRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/acessibilidade': typeof AcessibilidadeRoute
+  '/casa': typeof CasaRoute
+  '/contactos': typeof ContactosRoute
+  '/ementa': typeof EmentaRoute
+  '/eventos': typeof EventosRoute
+  '/galeria': typeof GaleriaRoute
+  '/garrafeira': typeof GarrafeiraRoute
+  '/imprensa': typeof ImprensaRoute
+  '/privacidade': typeof PrivacidadeRoute
+  '/raca': typeof RacaRoute
+  '/reservas': typeof ReservasRoute
+  '/sala-privada': typeof SalaPrivadaRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/acessibilidade': typeof AcessibilidadeRoute
+  '/casa': typeof CasaRoute
+  '/contactos': typeof ContactosRoute
+  '/ementa': typeof EmentaRoute
+  '/eventos': typeof EventosRoute
+  '/galeria': typeof GaleriaRoute
+  '/garrafeira': typeof GarrafeiraRoute
+  '/imprensa': typeof ImprensaRoute
+  '/privacidade': typeof PrivacidadeRoute
+  '/raca': typeof RacaRoute
+  '/reservas': typeof ReservasRoute
+  '/sala-privada': typeof SalaPrivadaRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/acessibilidade'
+    | '/casa'
+    | '/contactos'
+    | '/ementa'
+    | '/eventos'
+    | '/galeria'
+    | '/garrafeira'
+    | '/imprensa'
+    | '/privacidade'
+    | '/raca'
+    | '/reservas'
+    | '/sala-privada'
+    | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/acessibilidade'
+    | '/casa'
+    | '/contactos'
+    | '/ementa'
+    | '/eventos'
+    | '/galeria'
+    | '/garrafeira'
+    | '/imprensa'
+    | '/privacidade'
+    | '/raca'
+    | '/reservas'
+    | '/sala-privada'
+    | '/sitemap.xml'
+  id:
+    | '__root__'
+    | '/'
+    | '/acessibilidade'
+    | '/casa'
+    | '/contactos'
+    | '/ementa'
+    | '/eventos'
+    | '/galeria'
+    | '/garrafeira'
+    | '/imprensa'
+    | '/privacidade'
+    | '/raca'
+    | '/reservas'
+    | '/sala-privada'
+    | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AcessibilidadeRoute: typeof AcessibilidadeRoute
+  CasaRoute: typeof CasaRoute
+  ContactosRoute: typeof ContactosRoute
+  EmentaRoute: typeof EmentaRoute
+  EventosRoute: typeof EventosRoute
+  GaleriaRoute: typeof GaleriaRoute
+  GarrafeiraRoute: typeof GarrafeiraRoute
+  ImprensaRoute: typeof ImprensaRoute
+  PrivacidadeRoute: typeof PrivacidadeRoute
+  RacaRoute: typeof RacaRoute
+  ReservasRoute: typeof ReservasRoute
+  SalaPrivadaRoute: typeof SalaPrivadaRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sala-privada': {
+      id: '/sala-privada'
+      path: '/sala-privada'
+      fullPath: '/sala-privada'
+      preLoaderRoute: typeof SalaPrivadaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reservas': {
+      id: '/reservas'
+      path: '/reservas'
+      fullPath: '/reservas'
+      preLoaderRoute: typeof ReservasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/raca': {
+      id: '/raca'
+      path: '/raca'
+      fullPath: '/raca'
+      preLoaderRoute: typeof RacaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacidade': {
+      id: '/privacidade'
+      path: '/privacidade'
+      fullPath: '/privacidade'
+      preLoaderRoute: typeof PrivacidadeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/imprensa': {
+      id: '/imprensa'
+      path: '/imprensa'
+      fullPath: '/imprensa'
+      preLoaderRoute: typeof ImprensaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/garrafeira': {
+      id: '/garrafeira'
+      path: '/garrafeira'
+      fullPath: '/garrafeira'
+      preLoaderRoute: typeof GarrafeiraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galeria': {
+      id: '/galeria'
+      path: '/galeria'
+      fullPath: '/galeria'
+      preLoaderRoute: typeof GaleriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/eventos': {
+      id: '/eventos'
+      path: '/eventos'
+      fullPath: '/eventos'
+      preLoaderRoute: typeof EventosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ementa': {
+      id: '/ementa'
+      path: '/ementa'
+      fullPath: '/ementa'
+      preLoaderRoute: typeof EmentaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contactos': {
+      id: '/contactos'
+      path: '/contactos'
+      fullPath: '/contactos'
+      preLoaderRoute: typeof ContactosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/casa': {
+      id: '/casa'
+      path: '/casa'
+      fullPath: '/casa'
+      preLoaderRoute: typeof CasaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/acessibilidade': {
+      id: '/acessibilidade'
+      path: '/acessibilidade'
+      fullPath: '/acessibilidade'
+      preLoaderRoute: typeof AcessibilidadeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,17 +317,20 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AcessibilidadeRoute: AcessibilidadeRoute,
+  CasaRoute: CasaRoute,
+  ContactosRoute: ContactosRoute,
+  EmentaRoute: EmentaRoute,
+  EventosRoute: EventosRoute,
+  GaleriaRoute: GaleriaRoute,
+  GarrafeiraRoute: GarrafeiraRoute,
+  ImprensaRoute: ImprensaRoute,
+  PrivacidadeRoute: PrivacidadeRoute,
+  RacaRoute: RacaRoute,
+  ReservasRoute: ReservasRoute,
+  SalaPrivadaRoute: SalaPrivadaRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
