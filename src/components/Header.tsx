@@ -43,9 +43,16 @@ export function Header() {
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 lg:px-12">
         <Link
           to="/"
-          className="font-display text-xl tracking-[0.28em] text-bone hover:text-gold transition-colors"
+          aria-label="Casa Arouquesa — Início"
+          className="inline-flex items-center transition-opacity hover:opacity-85 focus-visible:opacity-100"
         >
-          CASA <span className="text-gold">AROUQUESA</span>
+          <img
+            src={logoMark}
+            alt="Casa Arouquesa"
+            width={48}
+            height={48}
+            className="h-9 w-auto sm:h-10 md:h-12"
+          />
         </Link>
 
         <nav aria-label="Principal" className="hidden lg:flex items-center gap-7">
