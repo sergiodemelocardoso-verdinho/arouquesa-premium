@@ -175,6 +175,12 @@ function Index() {
             <p className="mt-6 text-bone/75 text-lg leading-relaxed">
               {t("cellar.body")}
             </p>
+            <p className="mt-5 text-bone/70 text-base leading-relaxed">
+              Servido em copos{" "}
+              <span className="font-display italic text-gold">Riedel</span>
+              {" "}&{" "}
+              <span className="font-display italic text-gold">Spiegelau</span>.
+            </p>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-bone/60 text-sm">
               <span className="text-gold font-display italic text-xl">Dão</span>
               <span>·</span><span>Douro</span>
