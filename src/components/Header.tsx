@@ -4,8 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { waLink } from "@/lib/site";
-import logoMark from "@/assets/logo-mark.png";
-
+import logoHorizontal from "@/assets/logo-horizontal.png";
 
 const navItems = [
   { to: "/raca", key: "raca" },
@@ -41,35 +40,27 @@ export function Header() {
           : "bg-gradient-to-b from-charcoal/70 to-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-6 py-4 lg:px-12">
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 lg:px-12">
         <Link
           to="/"
-          aria-label="Casa Arouquesa — Início"
-          className="inline-flex shrink-0 items-center gap-3 transition-opacity hover:opacity-85 focus-visible:opacity-100"
+          aria-label="Casa Arouquesa — início"
+          className="group inline-flex items-center shrink-0"
         >
           <img
-            src={logoMark}
-            alt=""
-            width={48}
-            height={48}
-            className="h-9 w-auto sm:h-10 md:h-11"
+            src={logoHorizontal}
+            alt="Casa Arouquesa"
+            width={170}
+            height={60}
+            className="h-9 w-auto md:h-11 transition-transform duration-300 group-hover:scale-[1.03]"
           />
-          <span className="flex flex-col leading-none">
-            <span className="font-display text-lg sm:text-xl md:text-[1.35rem] text-bone tracking-wide">
-              CASA AROUQUESA
-            </span>
-            <span className="font-sans text-[0.6rem] sm:text-[0.65rem] tracking-[0.28em] uppercase text-bone/60">
-              restaurante
-            </span>
-          </span>
         </Link>
 
-        <nav aria-label="Principal" className="hidden xl:flex items-center gap-7 whitespace-nowrap">
+        <nav aria-label="Principal" className="hidden xl:flex items-center gap-5 px-6 whitespace-nowrap">
           {navItems.map((n) => (
             <Link
               key={n.to}
               to={n.to}
-              className="text-[0.72rem] tracking-[0.22em] uppercase text-bone/75 hover:text-gold transition-colors whitespace-nowrap"
+              className="text-[0.7rem] tracking-[0.16em] uppercase text-bone/75 hover:text-gold transition-colors"
               activeProps={{ className: "text-gold" }}
             >
               {t(`nav.${n.key}`)}
@@ -77,22 +68,22 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden xl:flex items-center gap-6 shrink-0">
+        <div className="hidden xl:flex items-center gap-5 shrink-0">
           <LanguageSwitcher />
           <a
             href={waLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gold text-charcoal px-5 py-2.5 text-[0.7rem] tracking-[0.22em] uppercase font-medium hover:bg-gold-soft transition-colors whitespace-nowrap"
+            className="bg-gold text-charcoal px-5 py-2.5 text-[0.7rem] tracking-[0.18em] uppercase font-medium whitespace-nowrap hover:bg-gold-soft transition-colors"
           >
-            {t("cta.reserveShort")}
+            {t("cta.reserve")}
           </a>
         </div>
 
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="xl:hidden text-bone p-2 -mr-2 shrink-0"
+          className="xl:hidden text-bone p-2 -mr-2"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
         >
