@@ -80,17 +80,29 @@ function Index() {
             </p>
           </Reveal>
           <Reveal delay={400}>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <GoldButton href={waLink()} target="_blank" rel="noopener noreferrer">
-                {t("cta.reserveWa")}
-              </GoldButton>
-              <Link
-                to="/ementa"
-                className="group inline-flex items-center justify-center gap-3 px-7 py-3.5 text-[0.78rem] tracking-[0.24em] uppercase font-medium border border-gold/50 text-gold hover:border-gold hover:bg-gold/5 transition-all"
-              >
-                {t("cta.seeMenu")}
-                <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-              </Link>
+            <div className="mt-14 border-t border-gold/30 pt-2">
+              <ul className="flex flex-col sm:flex-row sm:divide-x sm:divide-gold/30">
+                {([
+                  { to: "/ementa", key: "menu" },
+                  { to: "/garrafeira", key: "cellar" },
+                  { to: "/sala-privada", key: "private" },
+                ] as const).map((h, i) => (
+                  <li
+                    key={h.key}
+                    className={`flex-1 ${i > 0 ? "border-t border-gold/30 sm:border-t-0" : ""}`}
+                  >
+                    <Link
+                      to={h.to}
+                      className="group flex items-center justify-between gap-4 py-5 sm:px-6 text-bone hover:text-gold transition-colors"
+                    >
+                      <span className="font-display italic text-xl md:text-2xl">
+                        {t(`hero.highlights.${h.key}`)}
+                      </span>
+                      <span aria-hidden className="text-gold transition-transform duration-300 group-hover:translate-x-1">→</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </Reveal>
         </div>

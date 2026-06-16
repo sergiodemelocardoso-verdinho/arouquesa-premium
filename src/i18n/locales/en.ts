@@ -14,6 +14,7 @@ export default {
   },
   cta: {
     reserveWa: "Reserve on WhatsApp",
+    reserveShort: "Reserve",
     callUs: "Call",
     seeMenu: "See the menu",
     askQuote: "Request a quote",
@@ -26,6 +27,11 @@ export default {
     subtitle:
       "In Repeses, we celebrate authentic Arouquesa beef over charcoal — with the patience of tradition and the refinement of a house that aspires to be among Portugal's finest.",
     scroll: "Scroll",
+    highlights: {
+      menu: "Menu",
+      cellar: "Wine Cellar",
+      private: "Private Room",
+    },
   },
   specialties: {
     eyebrow: "Specialties",

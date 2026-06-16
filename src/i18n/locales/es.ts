@@ -14,6 +14,7 @@ export default {
   },
   cta: {
     reserveWa: "Reservar por WhatsApp",
+    reserveShort: "Reservar",
     callUs: "Llamar",
     seeMenu: "Ver la carta",
     askQuote: "Pedir presupuesto",
@@ -26,6 +27,11 @@ export default {
     subtitle:
       "En Repeses celebramos la auténtica carne Arouquesa sobre la brasa — con la paciencia de la tradición y el refinamiento de una casa que aspira a estar entre las mejores de Portugal.",
     scroll: "Bajar",
+    highlights: {
+      menu: "Carta",
+      cellar: "Bodega",
+      private: "Sala Privada",
+    },
   },
   specialties: {
     eyebrow: "Las especialidades",
