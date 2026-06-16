@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { waLink } from "@/lib/site";
-import logoHorizontal from "@/assets/logo-horizontal-white.png.asset.json";
+import logoHorizontal from "@/assets/logo-horizontal.png.asset.json";
 
 const navItems = [
   { to: "/raca", key: "raca" },
@@ -40,27 +40,27 @@ export function Header() {
           : "bg-gradient-to-b from-charcoal/70 to-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 lg:px-12">
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-6 py-4 lg:px-12">
         <Link
           to="/"
           aria-label="Casa Arouquesa — Início"
-          className="inline-flex items-center transition-opacity hover:opacity-85 focus-visible:opacity-100"
+          className="inline-flex shrink-0 items-center transition-opacity hover:opacity-85 focus-visible:opacity-100"
         >
           <img
             src={logoHorizontal.url}
             alt="Casa Arouquesa"
-            width={180}
-            height={64}
-            className="h-10 w-auto sm:h-11 md:h-12"
+            width={220}
+            height={72}
+            className="h-9 w-auto sm:h-10 md:h-11"
           />
         </Link>
 
-        <nav aria-label="Principal" className="hidden lg:flex items-center gap-7">
+        <nav aria-label="Principal" className="hidden xl:flex items-center gap-7 whitespace-nowrap">
           {navItems.map((n) => (
             <Link
               key={n.to}
               to={n.to}
-              className="text-[0.72rem] tracking-[0.22em] uppercase text-bone/75 hover:text-gold transition-colors"
+              className="text-[0.72rem] tracking-[0.22em] uppercase text-bone/75 hover:text-gold transition-colors whitespace-nowrap"
               activeProps={{ className: "text-gold" }}
             >
               {t(`nav.${n.key}`)}
@@ -68,22 +68,22 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="hidden xl:flex items-center gap-6 shrink-0">
           <LanguageSwitcher />
           <a
             href={waLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gold text-charcoal px-5 py-2.5 text-[0.7rem] tracking-[0.22em] uppercase font-medium hover:bg-gold-soft transition-colors"
+            className="bg-gold text-charcoal px-5 py-2.5 text-[0.7rem] tracking-[0.22em] uppercase font-medium hover:bg-gold-soft transition-colors whitespace-nowrap"
           >
-            {t("cta.reserveWa")}
+            {t("cta.reserveShort")}
           </a>
         </div>
 
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="lg:hidden text-bone p-2 -mr-2"
+          className="xl:hidden text-bone p-2 -mr-2 shrink-0"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
         >
@@ -93,7 +93,7 @@ export function Header() {
 
       {/* Mobile */}
       {open && (
-        <div className="lg:hidden bg-charcoal border-t border-gold/15 max-h-[calc(100dvh-64px)] overflow-y-auto">
+        <div className="xl:hidden bg-charcoal border-t border-gold/15 max-h-[calc(100dvh-64px)] overflow-y-auto">
           <nav aria-label="Mobile" className="flex flex-col px-6 py-6">
             {navItems.map((n) => (
               <Link

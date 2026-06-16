@@ -14,6 +14,7 @@ export default {
   },
   cta: {
     reserveWa: "Reservar por WhatsApp",
+    reserveShort: "Reservar",
     callUs: "Ligar",
     seeMenu: "Ver a ementa",
     askQuote: "Pedir orçamento",
@@ -26,6 +27,11 @@ export default {
     subtitle:
       "Em Repeses, celebramos a autêntica carne Arouquesa sobre a brasa — com a paciência da tradição e o requinte de uma casa que se quer entre as melhores de Portugal.",
     scroll: "Descer",
+    highlights: {
+      menu: "Ementa",
+      cellar: "Garrafeira",
+      private: "Sala Privada",
+    },
   },
   specialties: {
     eyebrow: "As especialidades",
