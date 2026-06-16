@@ -47,11 +47,11 @@ export function Header() {
           className="inline-flex items-center transition-opacity hover:opacity-85 focus-visible:opacity-100"
         >
           <img
-            src={logoMark}
+            src={logoHorizontal.url}
             alt="Casa Arouquesa"
-            width={48}
-            height={48}
-            className="h-9 w-auto sm:h-10 md:h-12"
+            width={180}
+            height={64}
+            className="h-10 w-auto sm:h-11 md:h-12"
           />
         </Link>
 
