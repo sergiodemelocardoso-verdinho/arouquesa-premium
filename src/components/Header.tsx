@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { waLink } from "@/lib/site";
-import logoMark from "@/assets/logo-mark.png";
+import logoHorizontal from "@/assets/logo-horizontal-white.png.asset.json";
 
 const navItems = [
   { to: "/raca", key: "raca" },
