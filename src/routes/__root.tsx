@@ -141,6 +141,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { name: "twitter:image", content: "/og-image.jpg" },
+      { property: "og:title", content: "Casa Arouquesa · Restaurante de carne Arouquesa D.O.P. em Viseu" },
+      { name: "twitter:title", content: "Casa Arouquesa · Restaurante de carne Arouquesa D.O.P. em Viseu" },
+      { name: "description", content: "A premium website for Casa Arouquesa, showcasing authentic Arouquesa D.O.P. meat." },
+      { property: "og:description", content: "A premium website for Casa Arouquesa, showcasing authentic Arouquesa D.O.P. meat." },
+      { name: "twitter:description", content: "A premium website for Casa Arouquesa, showcasing authentic Arouquesa D.O.P. meat." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
