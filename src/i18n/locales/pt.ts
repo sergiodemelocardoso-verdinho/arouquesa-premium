@@ -30,7 +30,7 @@ export default {
   specialties: {
     eyebrow: "As especialidades",
     title: "Cortes que definem a casa",
-    intro: "Quatro pratos que resumem a nossa filosofia: brasa, terroir e simplicidade refinada.",
+    intro: "Três pratos que resumem a nossa filosofia: brasa, terroir e simplicidade refinada.",
     items: {
       posta: {
         name: "Posta Arouquesa",
@@ -61,7 +61,7 @@ export default {
     eyebrow: "Garrafeira",
     title: "Uma seleção entre as melhores do mercado.",
     body:
-      "Vinhos do Dão em lugar de honra — o terroir da nossa casa — acompanhados por grandes regiões portuguesas e por champanhes e espumantes de prestígio. Curadoria e harmonização pensadas para a carne Arouquesa.",
+      "Vinhos do Dão em lugar de honra — o terroir da nossa casa — acompanhados por grandes regiões portuguesas e internacionais, como por champanhes e espumantes de prestígio. Curadoria e harmonização pensadas para a carne Arouquesa.",
     link: "Ver a garrafeira",
   },
   private: {
