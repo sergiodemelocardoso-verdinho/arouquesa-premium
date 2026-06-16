@@ -69,6 +69,21 @@ export default {
     body:
       "Vinos del Dão en lugar de honor — el terroir de nuestra casa — junto a las grandes regiones portuguesas y a champagnes y espumosos de prestigio. Curaduría y maridajes pensados para la carne Arouquesa.",
     link: "Ver la bodega",
+    glassware: "Servido en copas {{r}} & {{s}}.",
+  },
+  ambienceCards: {
+    esplanada: {
+      title: "Terraza cubierta",
+      caption: "Abierta en verano, cerrada en invierno.",
+    },
+    premium: {
+      title: "Sala premium",
+      caption: "Ambiente recogido, mesa vestida con latón.",
+    },
+    eventos: {
+      title: "Sala de eventos y grupos",
+      caption: "Para celebraciones, empresas y grupos.",
+    },
   },
   private: {
     eyebrow: "Sala Privada · Grupos",
