@@ -34,7 +34,7 @@ function Page() {
             {t("pages.garrafeira.body")}
           </p>
           <p className="mt-8 text-bone/80 text-base md:text-lg">
-            Servido em copos{" "}
+            Vasta seleção de copos{" "}
             <span className="font-display italic text-gold">Riedel</span>
             {" "}&{" "}
             <span className="font-display italic text-gold">Spiegelau</span>.

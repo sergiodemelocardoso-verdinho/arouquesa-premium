@@ -69,7 +69,7 @@ export default {
     body:
       "Vinhos do Dão em lugar de honra — o terroir da nossa casa — acompanhados por grandes regiões portuguesas e internacionais, como por champanhes e espumantes de prestígio. Curadoria e harmonização pensadas para a carne Arouquesa.",
     link: "Ver a garrafeira",
-    glassware: "Servido em copos {{r}} & {{s}}.",
+    glassware: "Vasta seleção de copos {{r}} & {{s}}.",
   },
   ambienceCards: {
     esplanada: {
