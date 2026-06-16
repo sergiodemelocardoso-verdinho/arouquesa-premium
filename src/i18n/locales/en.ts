@@ -69,6 +69,21 @@ export default {
     body:
       "Dão wines in the place of honour — the terroir of our house — alongside Portugal's great regions and prestige champagnes and sparkling wines. Curation and pairings designed for Arouquesa beef.",
     link: "See the cellar",
+    glassware: "Served in {{r}} & {{s}} glassware.",
+  },
+  ambienceCards: {
+    esplanada: {
+      title: "Covered terrace",
+      caption: "Open in summer, enclosed in winter.",
+    },
+    premium: {
+      title: "Premium room",
+      caption: "Intimate setting, tables dressed in brass.",
+    },
+    eventos: {
+      title: "Events & groups room",
+      caption: "For celebrations, companies and groups.",
+    },
   },
   private: {
     eyebrow: "Private Room · Groups",

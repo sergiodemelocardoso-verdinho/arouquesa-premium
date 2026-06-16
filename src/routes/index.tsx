@@ -175,6 +175,12 @@ function Index() {
             <p className="mt-6 text-bone/75 text-lg leading-relaxed">
               {t("cellar.body")}
             </p>
+            <p className="mt-5 text-bone/70 text-base leading-relaxed">
+              Servido em copos{" "}
+              <span className="font-display italic text-gold">Riedel</span>
+              {" "}&{" "}
+              <span className="font-display italic text-gold">Spiegelau</span>.
+            </p>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-bone/60 text-sm">
               <span className="text-gold font-display italic text-xl">Dão</span>
               <span>·</span><span>Douro</span>
@@ -253,25 +259,31 @@ function Index() {
             <p className="mt-5 text-bone/65 text-lg leading-relaxed">{t("ambience.body")}</p>
           </Reveal>
 
-          <div className="mt-14 grid gap-4 md:grid-cols-12 md:grid-rows-2 md:h-[640px]">
-            <Reveal className="group relative md:col-span-7 md:row-span-2 overflow-hidden">
-              <img src={sala1} alt="Sala premium da Casa Arouquesa" width={1024} height={1280} loading="lazy" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
-              <span className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-charcoal/85 to-transparent" />
-              <span className="absolute bottom-5 left-5 font-display text-2xl md:text-3xl text-bone">Sala premium</span>
-            </Reveal>
-            <Reveal delay={150} className="group relative md:col-span-5 overflow-hidden">
-              <img src={sala2} alt="Esplanada coberta da Casa Arouquesa" width={1280} height={1024} loading="lazy" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
-              <span className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-charcoal/85 to-transparent" />
-              <div className="absolute bottom-5 left-5">
-                <span className="block font-display text-2xl text-bone">Esplanada coberta</span>
-                <span className="mt-1 block text-gold text-[0.7rem] tracking-[0.2em] uppercase">Ampla · aberta no verão</span>
-              </div>
-            </Reveal>
-            <Reveal delay={300} className="group relative md:col-span-5 overflow-hidden">
-              <img src={sala3} alt="Sala para eventos corporativos e jantares de grupo" width={1024} height={1024} loading="lazy" className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
-              <span className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-charcoal/85 to-transparent" />
-              <span className="absolute bottom-5 left-5 font-display text-2xl text-bone">Eventos &amp; grupos</span>
-            </Reveal>
+          <div className="mt-14 grid gap-4 md:grid-cols-12 md:auto-rows-[320px]">
+            {[
+              { img: sala1, key: "esplanada", span: "md:col-span-8 md:row-span-2", alt: "Esplanada coberta da Casa Arouquesa" },
+              { img: sala2, key: "premium", span: "md:col-span-4", alt: "Sala premium da Casa Arouquesa" },
+              { img: sala3, key: "eventos", span: "md:col-span-4", alt: "Sala de eventos e grupos da Casa Arouquesa" },
+            ].map((card, i) => (
+              <Reveal key={card.key} delay={i * 150} className={`relative overflow-hidden group ${card.span}`}>
+                <img
+                  src={card.img}
+                  alt={card.alt}
+                  width={1280}
+                  height={1024}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-charcoal/95 via-charcoal/55 to-transparent p-6 pt-16">
+                  <h3 className="font-display text-2xl md:text-3xl text-bone">
+                    {t(`ambienceCards.${card.key}.title`)}
+                  </h3>
+                  <p className="mt-1 text-bone/75 text-sm md:text-base">
+                    {t(`ambienceCards.${card.key}.caption`)}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>

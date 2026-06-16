@@ -29,9 +29,17 @@ function Page() {
         </div>
       </section>
       <section className="py-20 px-6 lg:px-12">
-        <p className="mx-auto max-w-2xl text-bone/70 text-lg leading-relaxed text-center">
-          {t("pages.garrafeira.body")}
-        </p>
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-bone/70 text-lg leading-relaxed">
+            {t("pages.garrafeira.body")}
+          </p>
+          <p className="mt-8 text-bone/80 text-base md:text-lg">
+            Servido em copos{" "}
+            <span className="font-display italic text-gold">Riedel</span>
+            {" "}&{" "}
+            <span className="font-display italic text-gold">Spiegelau</span>.
+          </p>
+        </div>
       </section>
     </>
   );
