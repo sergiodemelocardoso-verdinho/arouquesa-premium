@@ -147,45 +147,8 @@ function Index() {
         </div>
       </section>
 
-      {/* RAÇA */}
-      <section className="py-24 lg:py-32 px-6 lg:px-12 bg-charcoal-soft">
-        <div className="mx-auto max-w-[1400px] grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
-          <Reveal>
-            <div className="aspect-[4/5] overflow-hidden">
-              <img
-                src={racaImg}
-                alt="Vaca Arouquesa em pastagem na Serra da Freita"
-                width={1600}
-                height={2000}
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </Reveal>
-          <Reveal delay={150}>
-            <p className="eyebrow">{t("raceTeaser.eyebrow")}</p>
-            <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl text-bone text-balance whitespace-pre-line">
-              {t("raceTeaser.title")}
-            </h2>
-            <div className="mt-8 w-12 h-px bg-gold" />
-            <blockquote className="mt-8 font-display italic text-2xl md:text-3xl text-bone/85 leading-snug">
-              “A melhor carne é Arouquesa.”
-            </blockquote>
-            <p className="mt-8 text-bone/70 text-lg leading-relaxed max-w-xl">
-              {t("raceTeaser.body")}
-            </p>
-            <div className="mt-10">
-              <Link
-                to="/raca"
-                className="group inline-flex items-center gap-3 text-gold text-[0.78rem] tracking-[0.24em] uppercase hover:text-gold-soft"
-              >
-                {t("raceTeaser.link")}
-                <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-              </Link>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+
+
 
       {/* GARRAFEIRA */}
       <section className="relative py-28 lg:py-40 px-6 lg:px-12 overflow-hidden">
