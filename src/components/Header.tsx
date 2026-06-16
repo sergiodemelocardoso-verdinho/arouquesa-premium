@@ -45,15 +45,23 @@ export function Header() {
         <Link
           to="/"
           aria-label="Casa Arouquesa — Início"
-          className="inline-flex shrink-0 items-center transition-opacity hover:opacity-85 focus-visible:opacity-100"
+          className="inline-flex shrink-0 items-center gap-3 transition-opacity hover:opacity-85 focus-visible:opacity-100"
         >
           <img
-            src={logoHorizontal.url}
-            alt="Casa Arouquesa"
-            width={220}
-            height={72}
+            src={logoMark}
+            alt=""
+            width={48}
+            height={48}
             className="h-9 w-auto sm:h-10 md:h-11"
           />
+          <span className="flex flex-col leading-none">
+            <span className="font-display text-lg sm:text-xl md:text-[1.35rem] text-bone tracking-wide">
+              CASA AROUQUESA
+            </span>
+            <span className="font-sans text-[0.6rem] sm:text-[0.65rem] tracking-[0.28em] uppercase text-bone/60">
+              restaurante
+            </span>
+          </span>
         </Link>
 
         <nav aria-label="Principal" className="hidden xl:flex items-center gap-7 whitespace-nowrap">
