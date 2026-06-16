@@ -176,7 +176,7 @@ function Index() {
               {t("cellar.body")}
             </p>
             <p className="mt-5 text-bone/70 text-base leading-relaxed">
-              Servido em copos{" "}
+              Vasta seleção de copos{" "}
               <span className="font-display italic text-gold">Riedel</span>
               {" "}&{" "}
               <span className="font-display italic text-gold">Spiegelau</span>.
@@ -189,7 +189,7 @@ function Index() {
               <span>·</span><span>Espumantes</span>
             </div>
             <p className="mt-8 max-w-xl text-bone/75 text-base leading-relaxed">
-              Servimos cada vinho no cálice certo, em{" "}
+              Servimos vinhos especiais, em{" "}
               <span className="text-gold">copos premium Riedel &amp; Spiegelau</span> — porque o copo
               também faz o vinho.
             </p>
