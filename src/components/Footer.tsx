@@ -2,20 +2,29 @@ import { Link } from "@tanstack/react-router";
 import { Facebook } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { SITE, waLink, telLink, mailLink } from "@/lib/site";
+import logoFullWhite from "@/assets/logo-full-white.png";
 
 export function Footer() {
   const { t } = useTranslation();
   return (
     <footer className="bg-charcoal-soft border-t border-gold/15 text-bone">
-      <div className="mx-auto max-w-[1400px] px-6 py-16 lg:px-12 lg:py-20 grid gap-12 lg:grid-cols-4">
-        <div>
-          <Link to="/" className="font-display text-xl tracking-[0.28em] text-bone">
-            CASA <span className="text-gold">AROUQUESA</span>
-          </Link>
-          <p className="mt-5 text-sm text-bone/65 leading-relaxed max-w-xs">
-            {t("hero.subtitle")}
-          </p>
-        </div>
+      <div className="mx-auto max-w-[1400px] px-6 pt-16 lg:px-12 lg:pt-20 flex flex-col items-center text-center">
+        <Link to="/" aria-label="Casa Arouquesa — Início" className="inline-flex">
+          <img
+            src={logoFullWhite}
+            alt="Casa Arouquesa"
+            width={206}
+            height={224}
+            className="h-28 w-auto"
+          />
+        </Link>
+        <p className="mt-6 text-sm text-bone/65 leading-relaxed max-w-md">
+          {t("hero.subtitle")}
+        </p>
+      </div>
+
+      <div className="mx-auto max-w-[1400px] px-6 py-14 lg:px-12 lg:py-16 grid gap-12 md:grid-cols-3">
+
 
         <div>
           <h3 className="eyebrow">{t("footer.visit")}</h3>
