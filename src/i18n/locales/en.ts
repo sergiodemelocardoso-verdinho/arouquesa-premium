@@ -77,6 +77,20 @@ export default {
     title: "Wood, stone and the glow of brass.",
     body: "A sober, warm setting designed to put the table at the heart of everything.",
   },
+  ambienceCards: {
+    esplanada: {
+      title: "Covered terrace",
+      caption: "Spacious · open in summer",
+    },
+    premium: {
+      title: "Premium room",
+      caption: "Elegance and comfort",
+    },
+    eventos: {
+      title: "Events & groups",
+      caption: "Private room with projection",
+    },
+  },
   press: {
     eyebrow: "Press & visits",
     title: "Those who visit, return — and speak of us.",
