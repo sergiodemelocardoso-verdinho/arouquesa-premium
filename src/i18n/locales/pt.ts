@@ -14,7 +14,7 @@ export default {
   },
   cta: {
     reserveWa: "Reservar por WhatsApp",
-    reserveShort: "Reservar",
+    reserve: "Reservar",
     callUs: "Ligar",
     seeMenu: "Ver a ementa",
     askQuote: "Pedir orçamento",
@@ -27,16 +27,11 @@ export default {
     subtitle:
       "Em Repeses, celebramos a autêntica carne Arouquesa sobre a brasa — com a paciência da tradição e o requinte de uma casa que se quer entre as melhores de Portugal.",
     scroll: "Descer",
-    highlights: {
-      menu: "Ementa",
-      cellar: "Garrafeira",
-      private: "Sala Privada",
-    },
   },
   specialties: {
     eyebrow: "As especialidades",
     title: "Cortes que definem a casa",
-    intro: "Três pratos que resumem a nossa filosofia: brasa, terroir e simplicidade refinada.",
+    intro: "Quatro pratos que resumem a nossa filosofia: brasa, terroir e simplicidade refinada.",
     items: {
       posta: {
         name: "Posta Arouquesa",
@@ -67,23 +62,8 @@ export default {
     eyebrow: "Garrafeira",
     title: "Uma seleção entre as melhores do mercado.",
     body:
-      "Vinhos do Dão em lugar de honra — o terroir da nossa casa — acompanhados por grandes regiões portuguesas e internacionais, como por champanhes e espumantes de prestígio. Curadoria e harmonização pensadas para a carne Arouquesa.",
+      "Vinhos do Dão em lugar de honra — o terroir da nossa casa — acompanhados por grandes regiões portuguesas e por champanhes e espumantes de prestígio. Curadoria e harmonização pensadas para a carne Arouquesa.",
     link: "Ver a garrafeira",
-    glassware: "Vasta seleção de copos {{r}} & {{s}}.",
-  },
-  ambienceCards: {
-    esplanada: {
-      title: "Esplanada coberta",
-      caption: "Aberta no verão, fechada no inverno.",
-    },
-    premium: {
-      title: "Sala premium",
-      caption: "Ambiente recolhido, mesa posta com latão.",
-    },
-    eventos: {
-      title: "Sala de eventos & grupos",
-      caption: "Para celebrações, empresas e grupos.",
-    },
   },
   private: {
     eyebrow: "Sala Privada · Grupos",
