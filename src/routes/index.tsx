@@ -261,8 +261,8 @@ function Index() {
 
           <div className="mt-14 grid gap-4 md:grid-cols-12 md:auto-rows-[320px]">
             {[
-              { img: sala1, key: "esplanada", span: "md:col-span-8 md:row-span-2", alt: "Esplanada coberta da Casa Arouquesa" },
-              { img: sala2, key: "premium", span: "md:col-span-4", alt: "Sala premium da Casa Arouquesa" },
+              { img: sala2, key: "premium", span: "md:col-span-8 md:row-span-2", alt: "Sala premium da Casa Arouquesa" },
+              { img: sala1, key: "esplanada", span: "md:col-span-4", alt: "Esplanada coberta da Casa Arouquesa" },
               { img: sala3, key: "eventos", span: "md:col-span-4", alt: "Sala de eventos e grupos da Casa Arouquesa" },
             ].map((card, i) => (
               <Reveal key={card.key} delay={i * 150} className={`relative overflow-hidden group ${card.span}`}>
