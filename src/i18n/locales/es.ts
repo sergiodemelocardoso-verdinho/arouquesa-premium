@@ -77,6 +77,20 @@ export default {
     title: "Madera, piedra y el brillo del latón.",
     body: "Un ambiente sobrio y cálido, pensado para que la mesa sea el centro de todo.",
   },
+  ambienceCards: {
+    esplanada: {
+      title: "Terraza cubierta",
+      caption: "Amplia · abierta en verano",
+    },
+    premium: {
+      title: "Sala premium",
+      caption: "Elegancia y confort",
+    },
+    eventos: {
+      title: "Eventos & grupos",
+      caption: "Sala privada con proyección",
+    },
+  },
   press: {
     eyebrow: "Prensa & visitas",
     title: "Quien nos visita, vuelve — y habla de nosotros.",
