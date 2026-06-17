@@ -77,6 +77,20 @@ export default {
     title: "Madeira, pedra e o brilho do latão.",
     body: "Um ambiente sóbrio e caloroso, pensado para que a mesa seja o centro de tudo.",
   },
+  ambienceCards: {
+    esplanada: {
+      title: "Esplanada coberta",
+      caption: "Ampla · aberta no verão",
+    },
+    premium: {
+      title: "Sala premium",
+      caption: "Requinte e conforto",
+    },
+    eventos: {
+      title: "Eventos & grupos",
+      caption: "Sala privada com projeção",
+    },
+  },
   press: {
     eyebrow: "Imprensa & visitas",
     title: "Quem nos visita, volta — e fala de nós.",
