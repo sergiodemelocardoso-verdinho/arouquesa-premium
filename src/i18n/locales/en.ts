@@ -31,7 +31,7 @@ export default {
   specialties: {
     eyebrow: "Specialties",
     title: "The cuts that define us",
-    intro: "Four dishes that distil our philosophy: fire, terroir and refined simplicity.",
+    intro: "Three dishes that distil our philosophy: fire, terroir and refined simplicity.",
     items: {
       posta: {
         name: "Posta Arouquesa",

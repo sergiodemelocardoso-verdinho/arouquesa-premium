@@ -31,7 +31,7 @@ export default {
   specialties: {
     eyebrow: "As especialidades",
     title: "Cortes que definem a casa",
-    intro: "Quatro pratos que resumem a nossa filosofia: brasa, terroir e simplicidade refinada.",
+    intro: "Três pratos que resumem a nossa filosofia: brasa, terroir e simplicidade refinada.",
     items: {
       posta: {
         name: "Posta Arouquesa",
