@@ -4,7 +4,7 @@ import { PageHero } from "@/components/PageHero";
 import { GoldButton } from "@/components/GoldButton";
 import { waLink } from "@/lib/site";
 import salaPrivadaImg from "@/assets/sala-privada.jpg";
-import sala1 from "@/assets/sala-1.jpg";
+import salaMesa from "@/assets/sala-privada-mesa.jpg";
 import sala3 from "@/assets/sala-3.jpg";
 
 export const Route = createFileRoute("/sala-privada")({
@@ -95,7 +95,7 @@ function Page() {
           <div className="grid md:grid-cols-2 gap-16 items-start mb-24">
             <Reveal>
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={sala1} alt="Sala privada preparada" width={900} height={1200} loading="lazy" className="h-full w-full object-cover" />
+                <img src={salaMesa} alt="Mesa da sala privada da Casa Arouquesa com copos Riedel" width={900} height={1200} loading="lazy" className="h-full w-full object-cover" />
               </div>
             </Reveal>
             <Reveal delay={150}>
